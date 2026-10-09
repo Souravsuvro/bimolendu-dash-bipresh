@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as VideosRouteImport } from './routes/videos'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as CoursesRouteImport } from './routes/courses'
@@ -31,6 +32,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsRoute = ToolsRouteImport.update({
+  id: '/tools',
+  path: '/tools',
   getParentRoute: () => rootRouteImport,
 } as any)
 const VideosRoute = VideosRouteImport.update({
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/videos': typeof VideosRoute
+  '/tools': typeof ToolsRoute
   '/faq': typeof FaqRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/videos': typeof VideosRoute
+  '/tools': typeof ToolsRoute
   '/faq': typeof FaqRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/courses': typeof CoursesRoute
   '/gallery': typeof GalleryRoute
   '/videos': typeof VideosRoute
+  '/tools': typeof ToolsRoute
   '/faq': typeof FaqRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/gallery'
     | '/videos'
+    | '/tools'
     | '/faq'
     | '/privacy'
     | '/terms'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/gallery'
     | '/videos'
+    | '/tools'
     | '/faq'
     | '/privacy'
     | '/terms'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/courses'
     | '/gallery'
     | '/videos'
+    | '/tools'
     | '/faq'
     | '/privacy'
     | '/terms'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   CoursesRoute: typeof CoursesRoute
   GalleryRoute: typeof GalleryRoute
   VideosRoute: typeof VideosRoute
+  ToolsRoute: typeof ToolsRoute
   FaqRoute: typeof FaqRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
@@ -171,6 +184,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools': {
+      id: '/tools'
+      path: '/tools'
+      fullPath: '/tools'
+      preLoaderRoute: typeof ToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faq': {
       id: '/faq'
       path: '/faq'
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   CoursesRoute: CoursesRoute,
   GalleryRoute: GalleryRoute,
   VideosRoute: VideosRoute,
+  ToolsRoute: ToolsRoute,
   FaqRoute: FaqRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
