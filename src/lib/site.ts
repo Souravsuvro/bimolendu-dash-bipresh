@@ -29,6 +29,40 @@ export function waMessage(text: string) {
   return `${WA}?text=${encodeURIComponent(text)}`;
 }
 
+/** Canonical production URL — used for SEO, OG, sitemap, share links */
+export const SITE_URL = "https://bimolendu-dash-bipresh.vercel.app";
+
+export const SITE_NAME = "Bimolendu Dash Bipresh";
+export const SITE_TAGLINE = "Mastering the Melody, Inspiring the Musician";
+export const SITE_DESCRIPTION =
+  "Professional Bengali & Hindi vocalist — Rabindra Sangeet, Nazrul Geeti, classical, folk and film songs. Founder of Parampara Music Academy, Sylhet. Book performances or enrol in offline & online courses.";
+
+export const OG_IMAGE = `${SITE_URL}/photos/live-mic.jpg`;
+
+export function shareUrl(path = "/") {
+  return `${SITE_URL}${path === "/" ? "" : path}`;
+}
+
+export function facebookShare(url: string) {
+  return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+}
+
+export function twitterShare(url: string, text: string) {
+  return `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+}
+
+export function whatsappShare(url: string, text: string) {
+  return `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`;
+}
+
+/** Promo banner copy — edit here to change campaign */
+export const PROMO = {
+  enabled: true,
+  text: "Now enrolling — Offline Academy in Sylhet & Online vocal courses",
+  cta: "View courses",
+  to: "/courses" as const,
+};
+
 export const EDUCATION = [
   {
     title: "M.A. in Vocal Music",
