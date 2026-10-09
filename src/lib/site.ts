@@ -42,7 +42,7 @@ export const SITE_TAGLINE = "Mastering the Melody, Inspiring the Musician";
 export const SITE_DESCRIPTION =
   "Professional Bengali & Hindi vocalist — Rabindra Sangeet, Nazrul Geeti, classical, folk and film songs. Founder of Parampara Music Academy, Sylhet. Book performances or enrol in offline & online courses.";
 
-export const OG_IMAGE = `${SITE_URL}/photos/live-mic.jpg`;
+export const OG_IMAGE = `${SITE_URL}/photos/live-mic.webp`;
 
 export function shareUrl(path = "/") {
   return `${SITE_URL}${path === "/" ? "" : path}`;
@@ -197,37 +197,37 @@ export const VIDEOS = [
 
 export const GALLERY = [
   {
-    src: "/photos/kaindo-nago-bhabani-banner.jpg",
+    src: "/photos/kaindo-nago-bhabani-banner.webp",
     alt: "কাইন্দ নাগো ভবানী — Upcoming release banner featuring Bimolendu Dash",
     caption: "কাইন্দ নাগো ভবানী (Kaindo Nago Bhabani) — Upcoming music video",
     credit: "Artist: Bimolendu Dash · Lyrics & Composition: Traditional · Lyrics Extension: Dilip Chandra Roy · Music Arrangement: Prasenjit Sil & Subrata Bose",
   },
   {
-    src: "/photos/portrait-blue-kurta.jpg",
+    src: "/photos/portrait-blue-kurta.webp",
     alt: "Bimolendu Dash Bipresh in blue embroidered kurta before Durga idols",
     caption: "Professional portrait — blue embroidered kurta",
     credit: "Studio portrait with Durga backdrop",
   },
   {
-    src: "/photos/with-anup-jalota.jpg",
+    src: "/photos/with-anup-jalota.webp",
     alt: "Bimolendu Dash Bipresh with Anup Jalota, the Bhajan Samraat",
     caption: "With Anup Jalota — Bhajan Samraat",
     credit: "A memorable meeting with the legendary Padma Shri singer",
   },
   {
-    src: "/photos/portrait-white-kurta.jpg",
+    src: "/photos/portrait-white-kurta.webp",
     alt: "Bimolendu Dash Bipresh seated in white kurta on marble steps",
     caption: "Professional portrait — white kurta",
     credit: "Piyush Kunj Photography",
   },
   {
-    src: "/photos/stage-harmonium.jpg",
+    src: "/photos/stage-harmonium.webp",
     alt: "Bimolendu Dash Bipresh performing live with harmonium",
     caption: "Live on stage — vocal & harmonium",
     credit: "Piyush Kunj Photography",
   },
   {
-    src: "/photos/live-mic.jpg",
+    src: "/photos/live-mic.webp",
     alt: "Bimolendu Dash Bipresh singing live with microphone on stage",
     caption: "Live performance — stage energy",
     credit: "Stage concert",
