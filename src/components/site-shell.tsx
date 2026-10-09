@@ -1,12 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
 import { NAV, FOOTER_LINKS, SOCIAL, WA, PHONE_DISPLAY, EMAIL } from "@/lib/site";
+import { PromoBanner } from "@/components/promo-banner";
+import { FloatingWhatsApp } from "@/components/floating-whatsapp";
+import { ShareButtons } from "@/components/share-buttons";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-cream text-ink flex flex-col">
+      <PromoBanner />
       <header className="sticky top-0 z-50 border-b border-line bg-cream/95 backdrop-blur-md">
         <div className="mx-auto flex h-14 sm:h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <Link
@@ -77,19 +81,27 @@ export function SiteShell({ children }: { children: ReactNode }) {
         )}
       </header>
 
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 pb-20 sm:pb-24">{children}</div>
 
       <footer className="border-t border-line bg-paper">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12">
+          <div className="mb-10 rounded-2xl border border-line bg-cream p-5 sm:p-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-saffron-deep">
+              Promote this site
+            </p>
+            <p className="mt-2 text-sm text-muted max-w-xl">
+              Share with music lovers in Kolkata, Bangladesh and the diaspora —
+              help more people discover the voice and the academy.
+            </p>
+            <ShareButtons className="mt-4" />
+          </div>
+
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <p className="font-serif text-lg font-semibold text-night">
-                Bimolendu Dash Bipresh
+              <p className="text-xs font-semibold uppercase tracking-widest text-saffron-deep">
+                Connect
               </p>
-              <p className="mt-2 text-sm text-muted">
-                Professional singer · Parampara Music Academy, Sylhet
-              </p>
-              <div className="mt-4 flex flex-wrap gap-3">
+              <div className="mt-3 flex flex-col gap-2">
                 <a
                   href={SOCIAL.facebook}
                   target="_blank"
@@ -167,10 +179,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
             </div>
           </div>
           <p className="mt-10 border-t border-line pt-6 text-center text-xs text-muted">
-            © {new Date().getFullYear()} Bimolendu Dash Bipresh · Parampara Music Academy
+            © {new Date().getFullYear()} Bimolendu Dash Bipresh · Parampara Music
+            Academy
           </p>
         </div>
       </footer>
+
+      <FloatingWhatsApp />
     </div>
   );
 }
