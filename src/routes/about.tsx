@@ -30,7 +30,7 @@ function AboutPage() {
         <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:items-start">
           <div className="overflow-hidden rounded-2xl border border-line bg-paper shadow-sm">
             <img
-              src="/photos/portrait-blue-kurta.jpg"
+              src="/photos/portrait-blue-kurta.webp"
               alt="Bimolendu Dash Bipresh professional portrait"
               className="w-full object-cover aspect-[4/5]"
               loading="eager"
@@ -78,7 +78,7 @@ function AboutPage() {
           <div className="mt-6 grid gap-6 lg:grid-cols-[280px_1fr] items-start">
             <div className="overflow-hidden rounded-2xl border border-line bg-paper shadow-sm">
               <img
-                src="/photos/with-anup-jalota.jpg"
+                src="/photos/with-anup-jalota.webp"
                 alt="Bimolendu Dash Bipresh with Anup Jalota"
                 className="w-full object-cover"
                 loading="lazy"
