@@ -24,7 +24,7 @@ function VideosPage() {
           <div className="grid gap-0 lg:grid-cols-2">
             <div className="relative aspect-video lg:aspect-auto lg:min-h-[280px]">
               <img
-                src="/photos/kaindo-nago-bhabani-banner.jpg"
+                src="/photos/kaindo-nago-bhabani-banner.webp"
                 alt="কাইন্দ নাগো ভবানী — Upcoming music video banner"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -42,11 +42,11 @@ function VideosPage() {
               <p className="mt-3 text-sm text-muted leading-relaxed">
                 Artist: <strong className="text-ink">Bimolendu Dash</strong>
                 <br />
-                Lyrics &amp; Composition: Traditional
+                Lyrics & Composition: Traditional
                 <br />
                 Lyrics Extension: Dilip Chandra Roy
                 <br />
-                Music Arrangement: Prasenjit Sil &amp; Subrata Bose
+                Music Arrangement: Prasenjit Sil & Subrata Bose
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a
