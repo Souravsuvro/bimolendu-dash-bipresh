@@ -117,8 +117,8 @@ export const COURSES = [
 export const VIDEOS = [
   {
     id: "ip_IUDJcfJ4",
-    title: "Emon Bhajan Jogyo Deho Peye",
-    note: "Devotional / traditional — lyrical performance",
+    title: "Emon Bhajan Jogyo Deho Peye (এমন ভজন যোগ্য দেহ পেয়ে)",
+    note: "Traditional / devotional lyrical performance. Artist: Bimolendu Dash Bipresh. Music direction: Dr. Tapan Roy. Released on Aalo.",
     url: "https://www.youtube.com/watch?v=ip_IUDJcfJ4",
   },
 ];
