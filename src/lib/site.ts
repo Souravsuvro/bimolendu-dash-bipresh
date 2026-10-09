@@ -15,6 +15,7 @@ export const NAV = [
   { to: "/about", label: "About" },
   { to: "/gallery", label: "Gallery" },
   { to: "/courses", label: "Courses" },
+  { to: "/tools", label: "Tools" },
   { to: "/videos", label: "Videos" },
   { to: "/faq", label: "FAQs" },
 ];
@@ -24,6 +25,7 @@ export const FOOTER_LINKS = [
   { to: "/about", label: "About" },
   { to: "/gallery", label: "Gallery" },
   { to: "/courses", label: "Courses" },
+  { to: "/tools", label: "Tools" },
   { to: "/videos", label: "Videos" },
   { to: "/faq", label: "FAQs" },
   { to: "/privacy", label: "Privacy Policy" },
@@ -266,5 +268,9 @@ export const FAQS = [
   {
     q: "Where can I watch his performances?",
     a: "See the Videos page for published performances, the Gallery for stage photos, and follow his Facebook profile (facebook.com/biprish.dash) and YouTube channel for more clips and updates.",
+  },
+  {
+    q: "Are there free practice tools on the site?",
+    a: "Yes. The Tools page offers a free practice metronome, breathing timer, vocal warm-up generator and reference tone (Sa / A440). They run in your browser. For guided voice training, enrol at Parampara Music Academy or message on WhatsApp.",
   },
 ];
