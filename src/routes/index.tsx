@@ -61,6 +61,7 @@ function Home() {
               <Link to="/courses" className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-paper px-5 font-semibold hover:bg-cream transition-colors">View courses</Link>
               <Link to="/videos" className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-paper px-5 font-semibold hover:bg-cream transition-colors">Videos</Link>
               <Link to="/gallery" className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-paper px-5 font-semibold hover:bg-cream transition-colors">Gallery</Link>
+              <Link to="/tools" className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-paper px-5 font-semibold hover:bg-cream transition-colors">Free tools</Link>
               <Link to="/about" className="inline-flex min-h-11 items-center justify-center rounded-full border border-line bg-paper px-5 font-semibold hover:bg-cream transition-colors">About</Link>
             </div>
             <div className="mt-5 flex flex-wrap gap-4 text-sm">
@@ -70,7 +71,7 @@ function Home() {
             </div>
           </div>
           <figure className="order-1 lg:order-2 relative">
-            <img src="/photos/live-mic.jpg" alt="Bimolendu Dash Bipresh singing on stage" className="aspect-[3/4] w-full max-w-md mx-auto rounded-2xl object-cover object-top shadow-xl" />
+            <img src="/photos/live-mic.webp" alt="Bimolendu Dash Bipresh singing on stage" className="aspect-[3/4] w-full max-w-md mx-auto rounded-2xl object-cover object-top shadow-xl" />
             <figcaption className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 rounded-xl bg-paper/95 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm shadow">
               <span className="block font-semibold">Live in Sylhet</span>
               <span className="text-muted">Vocalist · Harmonium</span>
@@ -82,7 +83,7 @@ function Home() {
           <div className="overflow-hidden rounded-2xl border border-saffron-deep/30 bg-gradient-to-br from-cream via-paper to-cream shadow-sm">
             <div className="grid gap-0 md:grid-cols-2">
               <div className="relative aspect-video md:aspect-auto md:min-h-[220px]">
-                <img src="/photos/kaindo-nago-bhabani-banner.jpg" alt="কাইন্দ নাগো ভবানী upcoming release" className="absolute inset-0 h-full w-full object-cover" />
+                <img src="/photos/kaindo-nago-bhabani-banner.webp" alt="কাইন্দ নাগো ভবানী upcoming release" className="absolute inset-0 h-full w-full object-cover" />
               </div>
               <div className="flex flex-col justify-center p-5 sm:p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-saffron-deep">New release</p>
@@ -99,7 +100,7 @@ function Home() {
 
         <section id="about" className="border-y border-line bg-paper">
           <div className="mx-auto grid max-w-6xl items-center gap-8 sm:gap-12 px-4 sm:px-6 py-12 sm:py-16 lg:grid-cols-2">
-            <img src="/photos/stage-harmonium.jpg" alt="Bimolendu Dash Bipresh with harmonium" className="aspect-square w-full max-w-lg mx-auto lg:mx-0 rounded-2xl object-cover shadow-lg" />
+            <img src="/photos/stage-harmonium.webp" alt="Bimolendu Dash Bipresh with harmonium" className="aspect-square w-full max-w-lg mx-auto lg:mx-0 rounded-2xl object-cover shadow-lg" />
             <div>
               <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-saffron-deep">The Artist</p>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-night">Voice before the classroom</h2>
